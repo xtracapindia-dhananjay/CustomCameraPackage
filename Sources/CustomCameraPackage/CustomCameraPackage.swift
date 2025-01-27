@@ -17,6 +17,7 @@ public struct SingleImageDocumentCameraView: UIViewControllerRepresentable {
     public init(scannedImage: Binding<UIImage?>, isShowingScanner: Binding<Bool>) {
         self._scannedImage = scannedImage
         self._isShowingScanner = isShowingScanner
+        ///
     }
     
     public func makeUIViewController(context: Context) -> VNDocumentCameraViewController {
