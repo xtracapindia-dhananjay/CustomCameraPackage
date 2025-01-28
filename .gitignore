@@ -6,3 +6,6 @@ DerivedData/
 .swiftpm/configuration/registries.json
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
+[submodule "CustomCameraPackage"]
+    path = CustomCameraPackage
+    url = https://github.com/xtracapindia-dhananjay/CustomCameraPackage
