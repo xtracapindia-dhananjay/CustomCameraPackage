@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'CustomCameraPackage'
-  spec.version      = '1.0.1'
+  spec.version      = '1.1.0'
 spec.summary        = 'A custom camera package for iOS.'
 spec.description    = 'This package provides a custom camera implementation for iOS apps.'
   spec.homepage     = 'https://github.com/xtracapindia-dhananjay/CustomCameraPackage'
