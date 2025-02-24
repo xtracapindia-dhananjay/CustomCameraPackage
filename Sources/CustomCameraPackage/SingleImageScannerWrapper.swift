@@ -10,14 +10,14 @@ import Vision
 import VisionKit
 
 @available(iOS 15.0, *)
-struct SingleImageScannerWrapper: View {
-    @State private var scannedImage: UIImage? = nil
-    @State private var isShowingScanner = false
+public struct SingleImageScannerWrapper: View {
+    @State public var scannedImage: UIImage? = nil
+    @State public var isShowingScanner = false
     var scanType: String  // Accept scanType
 
     var onScanComplete: (String?) -> Void  // Callback to return scanned image
 
-    var body: some View {
+    public var body: some View {
         SingleImageDocumentCameraView(
             scannedImage: $scannedImage,
             isShowingScanner: $isShowingScanner
