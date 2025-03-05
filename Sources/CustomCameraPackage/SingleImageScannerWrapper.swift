@@ -13,9 +13,18 @@ import VisionKit
 public struct SingleImageScannerWrapper: View {
     @State public var scannedImage: UIImage? = nil
     @State public var isShowingScanner = false
-    var scanType: String  // Accept scanType
+    public var scanType: String  // Accept scanType
 
     var onScanComplete: (String?) -> Void  // Callback to return scanned image
+
+     // ✅ Explicit Initializer
+        public init(scannedImage: UIImage? = nil, isShowingScanner: Bool = false, scanType: String, onScanComplete: @escaping (String?) -> Void) {
+            self._scannedImage = State(initialValue: scannedImage)
+            self._isShowingScanner = State(initialValue: isShowingScanner)
+            self.scanType = scanType
+            self.onScanComplete = onScanComplete
+        }
+
 
     public var body: some View {
         SingleImageDocumentCameraView(
